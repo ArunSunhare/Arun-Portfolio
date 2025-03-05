@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 3.4em !important;
+  width: 3.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -741,3 +741,38 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+.ui{
+  margin-left:70rem;
+  padding: 1rem;
+ font-weight:bolder;
+ font-size:large;
+ width: 120px;
+ height: 130px;
+ background: rgba(255, 255, 255, 0.3);
+ box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
+ backdrop-filter: blur(7px); 
+ -webkit-backdrop-filter: blur(7px);
+ border-radius: 10px;
+ border: 1px solid rgba(255, 255, 255, 0.18);
+ animation: float 3s ease-in-out infinite;
+}
+
+.mt{
+  margin-top: -10rem;
+}
+.mr{
+  margin-left:20rem;
+  padding: 1rem;
+  width: 150px;
+  height: 80px;
+  font-size: large;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
+  backdrop-filter: blur(7px); 
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+}
+
