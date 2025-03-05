@@ -741,27 +741,32 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
-.ui{
-  margin-left:70rem;
+/* Base Styles */
+.ui {
+  /* For larger screens, these values apply */
+  margin-left: 70rem;
   padding: 1rem;
- font-weight:bolder;
- font-size:large;
- width: 120px;
- height: 130px;
- background: rgba(255, 255, 255, 0.3);
- box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
- backdrop-filter: blur(7px); 
- -webkit-backdrop-filter: blur(7px);
- border-radius: 10px;
- border: 1px solid rgba(255, 255, 255, 0.18);
- animation: float 3s ease-in-out infinite;
+  font-weight: bolder;
+  font-size: large;
+  width: 120px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.123);
+  backdrop-filter: blur(7px); 
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: float 3s ease-in-out infinite;
 }
 
-.mt{
+/* .mt remains as originally defined */
+.mt {
   margin-top: -10rem;
 }
-.mr{
-  margin-left:20rem;
+
+/* .mr styling for larger screens */
+.mr {
+  margin-left: 20rem;
   padding: 1rem;
   width: 150px;
   height: 80px;
@@ -773,6 +778,26 @@ button:focus {
   -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  
 }
 
+/* Responsive adjustments for medium and smaller screens */
+@media (max-width: 768px) {
+  .ui {
+    margin-left: auto;   /* center element */
+    margin-right: auto;
+    width: 90%;          /* fluid width */
+    height: auto;        /* adjust height based on content */
+    font-size: medium;   /* scale down font size */
+  }
+  
+  .mt {
+    margin-top: -5rem;   /* reduce negative margin */
+  }
+  
+  .mr {
+    margin-left: 5%;
+    width: 90%;          /* fluid width for .mr */
+    height: auto;        /* let height adjust automatically */
+    font-size: medium;   /* scale font size down */
+  }
+}
