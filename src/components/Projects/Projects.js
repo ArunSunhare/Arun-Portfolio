@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import ecomerce from "../../Assets/Projects/ecomerce.png";
+import ToDo from "../../Assets/Projects/ToDo.png";
+import voting from "../../Assets/Projects/E-voting.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import game from "../../Assets/Projects/game.png";
 
 function Projects() {
   return (
@@ -23,47 +23,60 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={voting}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="E-Voting System Using Blockchain"
+              description="Online Election System would have user registration, user login and admin login.This Online Voting System will manage the Voter’s information by
+ which voter can login and use his voting rights.At the time of registration voter will be asked for this: Full name, age,Aadhaar card no, mobile no. email id and after being verified will begiven the access."
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={game}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Dicce-game"
+              description="A fun and interactive dice game built with React.js, where you test your luck and earn points based on your guesses!
+
+🕹️ How to Play
+Select a number between 1 and 6.
+Click on the dice to roll it.
+If your selected number matches the rolled dice number, you earn points equal to the dice value.
+If your guess is incorrect, 2 points will be deducted."
+              ghLink="https://github.com/ArunSunhare/Dicce-game"
+              demoLink="https://dicce-game.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ToDo}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="ToDo-List"
+              description="A to-do list website helps users organize tasks efficiently by allowing them to create, manage, and track their daily activities. It enhances productivity with features like reminders, deadlines, and task categorization."
+              ghLink="https://github.com/ArunSunhare/todolist"
+              demoLink="https://todolist-rho-indol.vercel.app/"              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Dicce-game"
+              description="A fun and interactive dice game built with React.js, where you test your luck and earn points based on your guesses!
+
+🕹️ How to Play
+Select a number between 1 and 6.
+Click on the dice to roll it.
+If your selected number matches the rolled dice number, you earn points equal to the dice value.
+If your guess is incorrect, 2 points will be deducted."
+              ghLink="https://github.com/ArunSunhare/Dicce-game"
+              demoLink="dicce-game.vercel.app"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -78,13 +91,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={ecomerce}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Ecomerce Website"
+              description="The ecomerce-website- project by ArunSunhare is a front-end e-commerce website built using HTML and CSS. It features pages like index.html and shop.html, along with associated assets such as images and stylesheets."
+              ghLink="https://github.com/ArunSunhare/ecomerce-website-"
+              demoLink="https://arunsunhare.github.io/ecomerce-website-/"     
             />
           </Col>
         </Row>
